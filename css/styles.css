@@ -32,14 +32,25 @@ html {
   outline: 1px solid red;
  }
 
+  display: flex;
 
 /* ===============conteiner================ */
 .conteiner {
-  width: 1158;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
 
 body {
   background-color: var(--background-primary-color);
@@ -66,21 +77,43 @@ text-decoration: none;
 .nav-link-no-decoration {
   text-decoration: none
 }
+/* =======скидаємо верхні і нижні зовнішні відступи======== */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 
+  ul {
+  margin: 0;
+  padding: 0;
+}  
 
+img {
+  display: block;
+}
+
+/* ========================== */
 
 
 /* logo */
+
 .logo {
   color: var(--brand-color);
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 800px; 
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .logo-accent {
   color: var(--title-primary-color);
 }
@@ -107,12 +140,56 @@ text-decoration: none;
 }
 
 .nav-item {
-  color: color: #2E2F42;
+  color: #2E2F42;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.02em;
 } 
+/* ===========ставимо в один ряд========= */
+/* ========забираємо крайній margin-right========  */
 
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+ }
+
+
+ /* =======ставимо padding-top та padding-bottom=======  */
+ .nav-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+} 
+ .nav-list .nav-link {
+   display: block; 
+  padding-top: 24px;
+  padding-bottom: 24px;
+ }
+  /* ===contacts======= */
+
+.contacts  {
+  display: flex; 
+  
+}
+
+.contacts .contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ===відступ між лого та студіо==== */
+.nav-list {
+  margin-left: 77px;
+}
+
+
+/* відступ від адрес і контакт */
+.contacts {
+  margin-left: 331px;
+}
 
 
 
@@ -122,6 +199,9 @@ text-decoration: none;
 background: #2E2F42
 } 
 
+.hero {
+text-align: center;
+}
 
 
 
@@ -129,10 +209,12 @@ background: #2E2F42
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.02em;
   color: var(--title-secondary-color);
   background-color: var(--title-primary-color);
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
@@ -155,6 +237,11 @@ background: #2E2F42
   color: var(--title-primary-color);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px ;
+}
+
 /* =================background====================== */
 
 .text-background {
@@ -163,6 +250,29 @@ background: #2E2F42
 
 
 /* Features section*/
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}   
+
+.features-list > .features-item {
+  padding-bottom: 120px;
+  padding-top: 120px;
+  /* width: 264px; */
+  margin: 24px;
+}
+
+.features-list {
+  display: flex;
+  /* margin: -75px; */
+}
+
+
+.features-list .item-title {
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
 
 .item-title {
   font-weight: 600;
@@ -180,6 +290,10 @@ background: #2E2F42
 
 /* Works section*/
 
+.works-list > .works-item {
+  padding-top: 120;
+  padding-bottom: 120;
+}
 /* Team section */
 .section-team {
   background: #F4F4FD;
@@ -189,7 +303,7 @@ background: #2E2F42
 .portfolio-filter-bnt {
   background-color: var(--byn-background-color);
   font-weight: 600;
-  font-size: 16px
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;

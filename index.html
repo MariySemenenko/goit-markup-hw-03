@@ -9,7 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"/>
-      <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"/>
       
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css"/>
@@ -17,8 +17,8 @@
   <body>
     <header class="page-header"> 
         <div class="conteiner">
-      <nav>
-        <a class="logo no-decoration" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+         <a class="logo no-decoration" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+         <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
           <a class="nav-link no-decoration" href="./index.html">Studio</a>
@@ -26,7 +26,8 @@
           <li class="nav-item">
             <a class="nav-link no-decoration" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="nav-item"><a class="nav-link no-decoration" href="">Contacts</a></li>
+          <li class="nav-item">
+            <a class="nav-link no-decoration" href="">Contacts</a></li>
         </ul>
         <ul class="contacts">
           <li class="contacts-item">
@@ -49,6 +50,7 @@
       <button type="button" class="hero-btn">Order Service</button>
     </section>
     <section class="section features">
+      <div class="conteiner">
       <h2 class="section-title">features</h2>
       <ul class="features-list">
         <li class="features-item">
@@ -80,9 +82,11 @@
           </p>
         </li>
       </ul>
+      </div>
     </section>
     <section class="section works">
-      <h2 class="section-title">What are we doing</h2>
+      <div class="conteiner">
+      <h3 class="section-title">What are we doing</h3>
       <ul class="works-list">
         <li class="works-item">
           <a class="works-link" href=""
@@ -96,9 +100,11 @@
           <a class="works-link" href=""><img src="./images/apps.jpg" alt="Gadgets" width="360" /></a>
         </li>
       </ul>
+      </div>
     </section>
     <section class="section-team">
-      <h2 class="section-title">Our Team</h3>
+      <div class="conteiner">
+      <h3 class="section-title">Our Team</h3>
       <ul class="team-list">
         <li class="team-item">
           <img class="team-img" src="./images/product-designer.jpg" alt="Man" width="264" />
@@ -121,6 +127,7 @@
           <p class="description">UI Designer</p>
         </li>
       </ul>
+      </div>
     </section>
 </main>
     <footer class="footer">
