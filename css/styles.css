@@ -1,10 +1,5 @@
-html {
+/* html {
   box-sizing: border-box;
-}
-
-/* *,
-*::before{
-  box-sizing: inherit;
 } */
 
 
@@ -22,7 +17,27 @@ html {
   --byn-background-color: #f4f4fd;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*=========Ставимо навігацію в один рядок=============== */
+.header-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .nav-list {
   display: flex;
  }
@@ -32,7 +47,6 @@ html {
   outline: 1px solid red;
  }
 
-  display: flex;
 
 /* ===============conteiner================ */
 .conteiner {
@@ -43,7 +57,7 @@ html {
   outline: 2px solid tomato;
 }
 
-.flex-container {
+.works-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -51,12 +65,14 @@ html {
   margin: 0; 
 }
 
-.flex-element {
-  flex-basis: calc((100%-48)/3);
+.works-list {
+  flex-basis: calc((100% - 48px)/3);
 }
 
-.flex {
+.team-img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 
@@ -183,10 +199,10 @@ img {
 
 .contacts  {
   display: flex; 
-  
+  align-items: center;
 }
 
-.contacts .contacts-item + .contacts-item {
+ .contacts-item {
   margin-left: 40px;
 }
 
@@ -202,21 +218,20 @@ img {
 
 
 /* відступ від адрес і контакт */
-.contacts {
+/* .contacts {
   margin-left: 331px;
-}
+} */
 
 
 
 /* Hero */
 
 .hero {
-background: #2E2F42
+background: #2E2F42;
+padding-top: 192px;
+text-align: center;
 } 
 
-.hero {
-text-align: center;
-}
 
 
 
@@ -224,7 +239,6 @@ text-align: center;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
-  /* text-align: center; */
   letter-spacing: 0.02em;
   color: var(--title-secondary-color);
   background-color: var(--title-primary-color);
@@ -252,10 +266,10 @@ text-align: center;
   color: var(--title-primary-color);
 }
 
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px ;
-}
+} */
 
 /* =================background====================== */
 
@@ -267,7 +281,7 @@ text-align: center;
 /* Features section*/
 
 .section {
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 120px;
 }   
 
@@ -304,11 +318,19 @@ text-align: center;
 }
 
 /* Works section*/
-
-.works-list > .works-item {
-  padding-top: 120;
-  padding-bottom: 120;
+.works-list .works-item {
+  justify-content: 24;
 }
+
+/* ставимо в один ряд */
+
+.works-list {
+  display: flex;
+} 
+
+
+
+
 /* Team section */
 .section-team {
   background: #F4F4FD;
