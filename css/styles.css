@@ -393,18 +393,18 @@ border: 0,5px solid #F4F4FD;
 
 .footer {
   background-color: var(--title-primary-color);
+  padding: 100px 0;
 }
 .logo-footer {
   color: var(--background-primary-color);
 }
 
-.footer-decoration {
-  padding-top: 117px;
-  padding-bottom: 83px;
-  padding-left: 221px;
-  padding-right: 955px;
+.footer .logo {
+  margin-bottom: 188px;
+  
 }
 
 .footer-desc {
-  padding-top: 16px;
-}
+  width: 264px;
+  margin-top: 16px;
+} 
