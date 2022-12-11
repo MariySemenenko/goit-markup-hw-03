@@ -206,7 +206,7 @@ img {
 background: #2E2F42;
 padding-top: 192px;
 text-align: center;
-padding-bottom: 120px;
+/* padding-bottom: 120px; */
 } 
 
 
@@ -250,11 +250,6 @@ padding-bottom: 120px;
 
 /* Features section*/
 
-.features-list > .features-item {
-  padding-bottom: 120px;
-  padding-top: 120px; 
-} 
-
 .features-list {
   display: flex;
   gap: 24px;
@@ -272,24 +267,19 @@ padding-bottom: 120px;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--title-primary-color);
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
-  
+  color: var(--title-primary-color); 
 }
 
 .description {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--paragraph-primary-color);
-}
+} 
 
 /* Works section*/
 
 .section-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .works-list {
@@ -324,6 +314,7 @@ padding-bottom: 120px;
 
 .section {
   padding-bottom: 120px;
+  padding-top: 120px; 
 }  
 
 .section-team {
@@ -349,14 +340,19 @@ padding-bottom: 120px;
 }
 
 .item-description {
-  margin-top: 32px;
-  margin-right: 16px;
-  margin-bottom: 32px;
-  margin-left: 16px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   text-align: center;
 }
 
 /* ======Portfolio======= */
+
+.section-bnt {
+  padding-top: 96px;
+  margin-top: auto;
+}
 
 .portfolio-filter-bnt {
   background-color: var(--byn-background-color);
@@ -367,8 +363,13 @@ padding-bottom: 120px;
   letter-spacing: 0.04em;
   color: var(--brand-color);
   cursor: pointer;
-  border-radius: 4px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+  
+  
 }
 
 .portfolio-filter-bnt:hover,
@@ -377,16 +378,19 @@ padding-bottom: 120px;
   color: var(--background-primary-color);
 }
 
-
 .portfolio-filter {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  padding-top: 96px;
   margin-bottom: 72px;
+}
+
+.portfolio-filter-bnt {
+  padding-top: 12px;
   padding-right: 24px;
   padding-left: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 12px; 
+ 
 } 
 
 .portfolio-filter-item {
@@ -417,12 +421,15 @@ padding-bottom: 120px;
  flex-basis: calc((100% - 48) / 3);
 } 
 
+.portfolio-list .item-decoration {
+  margin-bottom: 8px;
+}
+
 .portfolio-card {
 padding-top: 32px;
 padding-bottom: 32px;
 padding-left: 16px;
 padding-right: 16px;
-border: 0,5px solid #F4F4FD;
 }
 
 /* Footer */
