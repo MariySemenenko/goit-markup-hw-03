@@ -101,7 +101,6 @@ img {
 /* logo */
 
 .page-header {
-  /* margin-bottom: 96px; */
   margin-bottom: 0;
 }
 
@@ -206,7 +205,6 @@ img {
 background: #2E2F42;
 padding-top: 192px;
 text-align: center;
-/* padding-bottom: 120px; */
 } 
 
 
@@ -248,11 +246,19 @@ text-align: center;
 }
 
 
-/* Features section*/
+/* Features section*/ 
+
+.features {
+  padding-top: 120px;
+}
 
 .features-list {
   display: flex;
   gap: 24px;
+}
+
+.features-item {
+  width: 264px;
 }
 
 
@@ -290,9 +296,6 @@ text-align: center;
   margin: 0; 
 }
 
-.works {
-  padding-bottom: 120px;
-}
 
 .works-list {
   flex-basis: calc((100% - 48px)/3);
@@ -314,7 +317,6 @@ text-align: center;
 
 .section {
   padding-bottom: 120px;
-  padding-top: 120px; 
 }  
 
 .section-team {
@@ -322,10 +324,7 @@ text-align: center;
 }
 
  .title-front {
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .teams {
@@ -351,6 +350,7 @@ text-align: center;
 
 .section-bnt {
   padding-top: 96px;
+  padding-bottom: 120px;
   margin-top: auto;
 }
 
@@ -390,7 +390,7 @@ text-align: center;
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 12px; 
- 
+ margin-bottom: 0;
 } 
 
 .portfolio-filter-item {
