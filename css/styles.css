@@ -366,10 +366,7 @@ text-align: center;
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 72px;
-  
-  
+  justify-content: center;  
 }
 
 .portfolio-filter-bnt:hover,
